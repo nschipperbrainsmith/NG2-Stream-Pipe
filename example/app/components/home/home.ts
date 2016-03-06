@@ -1,6 +1,6 @@
 import {Component} from 'angular2/core';
 import {Title} from 'angular2/platform/browser';
-import {StreamPipe} from "../../pipe/stream";
+import {StreamPipe} from "../../../../src/stream";
 import {Observable} from "rxjs/Observable";
 
 @Component({
