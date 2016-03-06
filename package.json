@@ -1,6 +1,6 @@
 {
   "name": "ng2-stream-pipe",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NG2 Stream pipe",
   "author": "Nick Schipper",
   "main": "stream.js",
