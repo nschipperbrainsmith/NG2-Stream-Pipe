@@ -13,7 +13,7 @@
   "license": "MIT",
   "baseUrl": "http://localhost:8080",
   "scripts": {
-    "postinstall": "npm run typings install && node ./node_modules/protractor/bin/webdriver-manager update",
+    "install-tools": "npm run typings install && node ./node_modules/protractor/bin/webdriver-manager update",
     "test": "npm run unit-test",
     "unit-test": "karma start",
     "e2e-test": "protractor protractor.conf.js",
