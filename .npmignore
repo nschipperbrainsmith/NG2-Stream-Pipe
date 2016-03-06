@@ -1,0 +1,10 @@
+typings/
+node_modules/
+.idea/
+build/
+example/
+.travis.yml
+webpack.build.config.js
+webpack.test.config.js
+protractor.conf.js
+karma.conf.js

@@ -1,9 +1,16 @@
 {
-	"name": "nl.schippie.ng2-stream-pipe",
-	"version": "0.0.1",
+	"name": "ng2-stream-pipe",
+	"version": "0.0.0",
 	"description": "NG2 Stream pipe",
 	"author": "Nick Schipper",
 	"main": "stream.js",
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/schippie/NG2-Stream-Pipe.git"
+	},
+	"homepage": "https://github.com/schippie/NG2-Stream-Pipe",
+	"bugs": "https://github.com/schippie/NG2-Stream-Pipe/issues",
+	"license": "MIT",
 	"baseUrl": "http://localhost:8080",
 	"scripts": {
 		"postinstall": "npm run typings install && node ./node_modules/protractor/bin/webdriver-manager update",
@@ -11,6 +18,7 @@
 		"unit-test": "karma start",
 		"e2e-test": "protractor protractor.conf.js",
 		"build": "webpack -p --progress --config webpack.build.config.js",
+		"publish-build": "tsc ./src/stream.ts --outDir ./ -d",
 		"typings": "typings"
 	},
 	"devDependencies": {

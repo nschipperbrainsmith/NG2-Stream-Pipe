@@ -4,21 +4,19 @@ module.exports = {
 	resolve: {
 		extensions: ['.ts', '.js', '.scss', '.css', '.html', '']
 	},
-	entry: './app/main.ts',
+	entry: './src/stream.ts',
 	plugins: [
 		new webpack.optimize.UglifyJsPlugin({
 			comments: false
 		})
 	],
 	output: {
-		path: "./www",
-		publicPath: 'www/',
-		filename: "bundle.js"
+		filename: "stream.js"
 	},
 	module: {
 		loaders: [
 			// Support for TYPESCRIPT files.
-			{ test: /\.ts$/, loader: 'ts-loader', exclude: [ /\.(spec|e2e|async)\.ts$/ ] },
+			{ test: /stream\.ts$/, loader: 'ts-loader', exclude: [ /\.(spec|e2e|async)\.ts$/ ] },
 
 			// support for .html as raw text
 			{ test: /\.html$/,  loader: 'html?minimize=false' },
@@ -35,7 +33,9 @@ module.exports = {
 	},
 	ts: {
 		compilerOptions: {
-			sourceMap: false
+			sourceMap: false,
+			declaration: true,
+			outDir: './'
 		}
 	}
 };
