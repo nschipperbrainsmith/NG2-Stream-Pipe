@@ -18,7 +18,7 @@
     "unit-test": "karma start",
     "e2e-test": "protractor protractor.conf.js",
     "build": "webpack -p --progress --config webpack.build.config.js",
-    "publish-build": "tsc ./src/stream.ts --outDir ./ -d",
+    "publish-build": "tsc",
     "typings": "typings"
   },
   "devDependencies": {

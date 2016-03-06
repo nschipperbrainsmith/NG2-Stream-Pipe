@@ -20,5 +20,8 @@ module.exports = {
 			// Support for CSS
 			{ test: /\.css$/, loaders: ["raw", "css"]}
 		]
+	},
+	ts: {
+		configFileName: "tsconfig.test.json"
 	}
 };
