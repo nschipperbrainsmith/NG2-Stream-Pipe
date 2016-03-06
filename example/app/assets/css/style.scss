@@ -1,0 +1,11 @@
+/**
+* Within this file all the links to other CSS files are included. This is compiled by the webpack sass-loader.
+* This means you do not have to do anything or use any IDE to build the css from this file. All is done on runtime.
+
+**/
+
+body {
+	background-color: lightyellow;
+	color: green;
+	font-size: 1.5em;
+}
